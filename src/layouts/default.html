@@ -1,0 +1,103 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{root}}css/app.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{subject}}</title>
+    <!-- <style> -->
+  </head>
+  <body>
+    <span class="preheader">{{description}}</span>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
+            <!-- Header -->
+            <container>
+              <wrapper class="header">
+                  <row class="collapse">
+                    <columns small="5">
+                      <img src="/assets/img/logo.png" alt="hearsay">
+                    </columns>
+                    <columns small="7">
+                      <p class="text-right"><a href="#">Click here to view this email in a browser</a></p>
+                    </columns>
+                  </row>
+              </wrapper>
+            </container>
+            <!-- End of header -->
+
+            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
+            {{> body}}
+
+            <!-- Footer -->
+            <spacer size="20"></spacer>
+            <wrapper>
+              <container>
+                <row>
+                  <columns></columns>
+                  <columns>
+                    <wrapper>
+                      <row>
+                        <columns>
+                          <center>
+                            <menu class="social-icons">
+                              <item href="#"><img src="/assets/img/facebook.png" alt="facebook"></item>
+                              <item href="#"><img src="/assets/img/twitter.png" alt="twitter"></item>
+                              <item href="#"><img src="/assets/img/linkedin.png" alt="linkedin"></item>
+                              <item href="#"><img src="/assets/img/google-plus.png" alt="google-plus"></item>
+                              <item href="#"><img src="/assets/img/hearsay.png" alt="hearsay"></item>
+                            </menu>
+                          </center>
+                        </columns>
+                      </row>
+                    </wrapper>
+
+                    <spacer size="20"></spacer>
+
+                    <wrapper class="secondary download-app">
+                      <row>
+                        <columns small="3" large="2">
+                          <img class="float-center" src="/assets/img/hearsay.png" alt="hearsay">
+                        </columns>
+                        <columns small="8" large="10">
+                          <h4 class="small-text-center">Get our mobile app to publish posts on the go!</h4>
+                          <a href="#">Download iOS app  •</a>
+                          <a href="#">Download Android app</a>
+                        </columns>  
+                      </row>
+                    </wrapper>
+
+                    <spacer size="25"></spacer>
+
+                    <wrapper class="footer-message">
+                      <p class="text-center"><strong>This message was intended for <a href="mailto:hgo@hearsaycorp.com">hgo@hearsaycorp.com</a></strong></p>
+                      <p class="text-center">Hearsay Systems doesn't create suggested content; corporate and regional admins are responsible for creating the content that is provided to the Regions and Workspaces. We recommend that you send content requests directly through your organization.</p>
+                      <p class="text-center">For more info or to see our FAQs visit our <a href="#">Customer Success page.</a></p>
+                      <spacer size="15"></spacer>
+                      <p class="text-center">
+                        <strong>Hearsay Systems</strong>
+                        <br>185 Berry St, Ste 3800 · San Francisco, CA 94107 · USA
+                        <br><a href="">Unsubscribe</a>
+                      </p>
+                    </wrapper>
+                  </columns>
+                  <columns></columns>
+                </row>
+              </container>
+            </wrapper>
+            <!-- End of footer -->
+          </center>
+        </td>
+      </tr>
+    </table>
+    <!-- prevent Gmail on iOS font size manipulation -->
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>
+

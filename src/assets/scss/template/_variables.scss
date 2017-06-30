@@ -1,0 +1,40 @@
+// Globals
+$global-padding: 16px;
+$global-radius: 4px;
+$global-rounded: 4px;
+
+
+//  Typography
+
+$global-font-color: #333333;
+
+$global-font-size: 14px;
+$h1-font-size: 17px;
+$h3-font-size: 14px;
+$h4-font-size: 12px;
+$h5-font-size: 11px;
+
+// Colors
+$red-color: #c10022;
+$dark-gray: #e5eaed;
+
+// Buttons
+$button-background: #5d9cec;
+$button-margin: 10px 0 10px 0;
+$button-font-size: (
+  tiny: 10px,
+  small: 11px,
+  default: 12px,
+  large: 20px,
+);
+
+// Callout
+$callout-background: $white;
+$callout-background-fade: 100%;
+$callout-padding: 20px 10px;
+$callout-margin-bottom: $global-margin;
+$callout-border: 1px solid #dddddd;
+$callout-border-secondary: 1px solid darken($secondary-color, 20%);
+$callout-border-success: 1px solid darken($success-color, 20%);
+$callout-border-warning: 1px solid darken($warning-color, 20%);
+$callout-border-alert: 1px solid darken($alert-color, 20%);

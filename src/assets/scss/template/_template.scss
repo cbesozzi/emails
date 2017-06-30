@@ -1,0 +1,175 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles 
+body,
+html, 
+.body {
+  background: #ffffff !important;
+}
+
+// Basic styles 
+a {
+  text-decoration: underline;
+}
+h4 {
+  font-weight: 700;
+  color: #666666;
+  margin-bottom: 0;
+}
+.small-text-center {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    text-align: inherit !important;
+  }
+}
+
+td.columns,
+td.column,
+th.columns,
+th.column {
+  padding-bottom: 0;
+}
+table.body .columns, 
+table.body .column {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+.small-text {
+  font-size: 12px;
+}
+.set-right-justified{
+  text-align: right;
+  display: block;
+  tbody {
+    display: inline-block;
+  }
+  table {
+    display: inline;
+    text-align: right;
+  }
+}
+table.body .container {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    width: 97% !important;
+  }
+}
+
+// Full Width Headers
+  .container.header {
+    background: #ffffff;
+  }
+  .header {
+    border-bottom: 2px solid #c31820;
+    background: #fff;
+    .columns {
+      padding-bottom: 0;
+      vertical-align: bottom;
+    }
+    .wrapper-inner {
+      padding: 18px 0;
+    }
+    img {
+      height: 30px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        height: 27px !important;
+      }
+    }
+    .container {
+      background: transparent;
+    }
+    a {
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        font-size: 9px;
+      } 
+    }
+  }
+
+
+// Footer
+  .social-icons {
+    .menu-item {
+      img {
+        height: 15px;
+      }
+    }
+  }
+  .secondary.download-app {
+    background-color: $dark-gray;
+    border-radius: 4px;
+    .wrapper-inner {
+      padding: 15px 20px;
+      a {
+        font-size: 11px;
+        color: $red-color;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer-message {
+    p {
+      color: #666666;
+      font-size: 10px;
+    }
+  }
+
+// Content
+  .social-media {
+    h1 {
+      color: #3d5059;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+  .statistics {
+    h3 {
+      font-weight: 700;
+      font-size: 26px;
+      color: $red-color;
+      margin-bottom: 0;
+    }
+    p {
+      color: rgba(86, 86, 86, 0.5);
+    }
+  }
+  .contet-section {
+    background-color: #f4f6f6;
+    h5 {
+      color: #3d5059;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-left: 11px;
+    }
+    table.container {
+      background-color: transparent;
+    }
+    h3 {
+      margin-left: 16px;
+      @media only screen and (max-width: #{$global-breakpoint}) {
+        margin-left: 5px;
+      }
+    }
+    .content-box {
+      .callout {
+        box-shadow: 0 0.5px 2px 0 rgba(0, 0, 0, 0.11);
+        border-radius: 4px;
+      }
+    }
+    table.button {
+      margin: 0;
+    }
+    img {
+      height: 80px;
+    }
+    h4.blue {
+      font-weight: 700;
+      color: #5d9cec;
+    }
+    a {
+      font-size: 12px;
+      color: rgba(102, 102, 102, 0.5);
+      text-decoration: none;
+    }
+  }
